@@ -2,10 +2,21 @@
   "name": "ci-template-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/all"
+  },
+  "bin": {
+    "sp": "./bin/index"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "prompt-promise": "^1.0.3",
+    "request": "^2.76.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
 }
